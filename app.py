@@ -43,34 +43,42 @@ for frame in vision.get_frames():
     bath_towel= "https://www.amazon.com/s?k=bath+towel&ref=nb_sb_noss_1"
     Basketball ="https://www.amazon.com/s?k=Basketball&ref=nb_sb_noss_2"
     running_shoes ="https://www.footlocker.com/category/sport/running/shoes.html"
-    alt=" \n if link is not underlined or fully underlined, highlight the link, copy and paste into browser."
+    notebook="https://www.staples.com/Notebooks-Pads/cat_CL165557"
+    keyboard="https://www.amazon.com/Keyboards-Mice-Computer-Add-Ons-Computers/b?ie=UTF8&node=12879431"
+    alt="if link is not underlined or fully underlined, highlight the link, copy and paste into browser."
     
     if score >= float(0.60) and label == 'kite':
-        print(kite + "/n" + alt)
+        print(kite + " " + alt)
         time.sleep(10)
     elif score >= float(0.60) and label == 'baseball':
-        print(baseball + "/n" + alt )
+        print(baseball +" "+ alt )
         time.sleep(10)
     elif score >= float(0.6) and label =='coffee mug':
-        print(coffeemug + "/n" + alt)
+        print(coffeemug + " " + alt)
         time.sleep(10)
     elif score >= float(0.60) and label == 'ipod':
-        print(ipod + "/n" + alt)
+        print(ipod + " " + alt)
         time.sleep(10)
     elif score >= float(0.6) and label == 'mouse, computer mouse':
-        print(c_mouse + "\n" + alt)
+        print(c_mouse + " "+ alt)
         time.sleep(10)
     elif score>= float(0.60) and label == 'water bottle':
-        print(water_bottle + "\n" + alt)
+        print(water_bottle +" "+ alt)
         time.sleep(10)
     elif score >= float(0.6) and label == 'bath towel':
-        print(bath_towel + "\n" + alt)
+        print(bath_towel +" " + alt)
         time.sleep(10)
     elif score >= float(0.6) and label == 'basketball':
-        print(Basketball)
+        print(Basketball + " " + alt)
         time.sleep(10)
     elif score >= float(0.6) and label == 'running shoes':
-        print(running_shoes + "\n" + alt)
+        print(running_shoes + " "+alt)
+        time.sleep(10)
+    elif score >= float(0.6) and label == 'notebook, notebook computer':
+        print(notebook +  " " + alt)
+        time.sleep(10)
+    elif score >= float(0.6) and label == 'computer keyboard, keypad':
+        print(keyboard +  " " + alt)
         time.sleep(10)
     
                         
